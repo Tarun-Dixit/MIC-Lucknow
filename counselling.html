@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		*{
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		nav{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2% 5%;
+			height: 15vh;
+			
+		}
+		
+		.nav.items{
+			text-decoration: none;
+		}
+		.nav-links ul {
+			list-style: none;
+		}
+		.nav-links ul li{
+			display: inline-block;
+		}
+		.nav-links ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding :12px 24px;
+			font-size: 20px;
+		}
+		nav div ul li::after{
+			content: "";
+			width: 0%;
+			background: #f44336;
+			display: block;
+			height: 3px;
+			transition: width 0.5s;
+		}
+		nav div  ul li:hover::after{
+			width: 100%;
+		}
+		.nav-items1{
+			background-color: #f44336
+		}
+		header{
+			background-image: linear-gradient(rgba(4, 9, 30, 0.7) , rgba(4, 9,30,0.7)) , url('counselling-image.png');
+			height: 40vh;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		header h1{
+			color: #fff;
+			font-size: 2.5rem;
+			margin: 6vh 34vw;
+		}
+		.form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width:100% ;
+			margin-top: -11vh;
+		}
+		.layout{
+		background: #f87979;		
+		height: 78vh;
+		width: 50vw;
+		border-radius: 10px;
+		}
+		.layout h1{
+			margin: 20px 0;
+			text-align: center;
+			color: #fff;
+		}
+		.firstnameinput{
+			margin: 7vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.emailinput{
+			margin: 2vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.passwordinput{
+			margin: 2vh 6vw 10vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.numberinput{
+			margin: 2vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		#signup{
+			margin: 20vw ;
+			padding: 12px 24px;
+			background: transparent;
+			text-decoration: none;
+			color: white;
+			border-radius: 5px;
+			border: 3px solid black;
+		}
+		#signup:hover{
+			background: #00b894;
+			border: 3px solid #00b894;
+		}
+		.content{
+			display: flex;
+			justify-content: center;
+			margin: 10vh 10vw;
+		}
+		.heading{
+			text-align: center;
+		margin-top: 5vh;
+		font-size: 1rem;
+		}
+		.image{
+			margin-top: 20vh;
+		}
+		.para1{
+			font-size: 1.8rem;
+		padding: 0 20vw;
+		text-align: center;
+		font-weight: bold;
+		color: #2c00ff;
+		}
+		.para2{
+			margin: 10vh 20vw;
+		font-size: 1.2rem;
+		}
+		.para3{
+			margin: 10vh 20vw;
+		font-size: 1.2rem;
+		}
+		footer{
+		height: 50vh;
+		text-align: center;
+		width: 100%;
+		background-color: #f46b36d6;
+		padding: 10vh;
+		font-size: 20px;
+		font-weight: 900;
+		}
+		.footer{
+		display: flex;
+		justify-content: space-around;
+		line-height: 2;
+		}
+		.footer ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		.footer ul{
+			list-style: none;
+		}
+		.footer h3{
+			color: #220080;
+		}
+		.container2{
+			height: 80vh;
+			width: 80vw;
+			margin: 10vh 10vw 5vh;
+			border: 4px solid black;
+			animation: changeimage 10s linear infinite;
+			background: url('image1.jpg');
+			background-size: 79.5vw 79vh;
+		}
+		@keyframes changeimage {
+		50%{background: url("image3.jpg");
+			background-size: 79.5vw 79vh;
+			background-repeat: no-repeat;
+		}
+		100%{
+			background: url('image2.jpg');
+			background-size: 79.5vw 79vh;
+			background-repeat: no-repeat;
+		}
+		}
+		.container3{
+		text-align: center;
+		}
+		.container3 ol{
+		font-size: 1.2rem
+		}
+		.heading2{
+		margin-bottom:5vh;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<header>
+			<nav>
+				
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html" class="nav-items">HOME</a></li>
+						<li><a href="About.html" class="nav-items">ABOUT</a></li>
+						<li><a href="store.html" class="nav-items">STORE</a></li>
+						<li><a href="contactus.html" class="nav-items">CONTACT US</a></li>
+						<li><a href="counselling.html" class="nav-items1">COUNSELLING</a></li>
+					</ul>
+				</div>
+			</nav>
+			<h1>Counselling Service</h1>
+		</header>
+		<div class="container1">
+			<div class="heading">
+				<h1>Get our specialized counselling service.</h1>
+			</div>
+			<div class="content">
+				<div class="form">
+					<div class="layout">
+						<h1>Get your free trial</h1>
+						<input class="firstnameinput" type="text" name="name" placeholder="Enter your full name" size="20">
+						<input class="emailinput" type="text" name="name" placeholder="Enter your email address" size="20">
+						<input class="numberinput" type="text" name="name" placeholder="Enter your phone number" size="20">
+						<input class="passwordinput" type="text" name="name" placeholder="Diagnosis needed" size="20">
+						<a href="#" id="signup">Submit</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p class="para1">Fill the form above and <u > get consultation from doctors all over India </u> through one on one video call service within shortest possible time.</p>
+				<p class="para2" >With more and more people being affected directly or indirectly by COVID-19, there is a need to provide psychological first aid to relieve their distress and prevent them from developing more serious mental health issues and to optimize their mental health.</p>
+				<p class="para3"> Our counselors understand and address the mental health needs of the individuals, who are awaiting results of COVID-19 tests, confirmed COVID-19 individuals, health care workers working in COVID hospitals and their family members. The counselors can aid these individuals in getting reliable information and alleviate their distress.
+				</p>
+				<div class="container3">
+					<h1 class="heading2">
+					Goals of counselling-
+					</h1>
+					<ol>
+						<li> Encouraging safety, health and hygiene</li>
+						<li> Reducing immediate distress</li>
+						<li> Take constructive steps towards solving life problems</li>
+						<li> Help individuals cope better with their life challenges</li>
+						<li> Generate a sense of realistic hope</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="container2">
+			
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="link-menu-1">
+					<h3>Social Media</h3>
+					<ul><li><a href="#">Facebook</a></li></ul>
+					<ul><li><a href="#">Instagram</a></li></ul>
+					<ul><li><a href="#">Twitter</a></li></ul>
+					<ul><li><a href="#">Youtube</a></li></ul>
+				</div><div class="link-menu-2">
+				<h3>Contact</h3>
+				<ul><li><a href="#">Contact : 8115200050</a></li></ul>
+				<ul><li><a href="#">Address : Rohilkhand,New Delhi</a></li></ul>
+				<ul><li><a href="#">Email :safe-aidhealthcare<br>@gmail.com</a></li></ul>
+			</div><div class="link-menu-3">
+			<h3>Website</h3>
+			<ul><li><a href="index.html">Home</a></li></ul>
+			<ul><li><a href="About.html">About</a></li></ul>
+			<ul><li><a href="store.html">Store</a></li></ul>
+			<ul><li><a href="contactus.html">Contact Us</a></li></ul>
+			<ul><li><a href="counselling.html">Counselling</a></li></ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

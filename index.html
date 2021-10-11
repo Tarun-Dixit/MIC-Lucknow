@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Educational Website</title>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif
+		}
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(4, 9, 30, 0.7) , rgba(4, 9,30,0.7)) , url('https://source.unsplash.com/collection/1155333/');
+			background-repeat: no-repeat ;
+			background-size: cover;
+		}
+		nav{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2% 5%;
+			height: 15vh;
+		}
+		
+		
+		nav div ul{
+			list-style: none;
+		}
+		nav div ul li{
+			display: inline-block;
+			padding: 8px 12px;
+		}
+		nav div ul li::after{
+			
+			content: "";
+			width: 0%;
+			background: #f44336;
+			display: block;
+			height: 3px;
+			transition: width 0.5s;
+		}
+		.nav-items{
+			text-decoration: none;
+			color: white;
+		}
+		nav div  ul li:hover::after{
+			width: 100%;
+		}
+		.main1{
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			text-align: center;
+			height: 85vh;
+			transform: translate(-51%,-50%);
+			color: #fff;
+			width: 100vw;
+		}
+		.main1 h1{
+			font-weight: 900;
+			font-size: 62px;
+			/* margin: 0 0 20px; */
+		}
+		.btnone{
+			padding: 12px 24px;
+			border: 1px solid #fff;
+			background: transparent;
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			margin: 0 20px;
+		}
+		.p1{
+			font-size: 15px;
+			margin: 15px 0 40px;
+		}
+		.btnone:hover{
+			background: #f44336;
+			border: 1px solid red;
+			transition: 0.5s;
+		}
+		nav .fa{
+			display: none;
+		}
+		
+		.course{
+			padding-top: 10vh;
+			text-align: center;
+			width: 100%;
+			margin-bottom: -3vh;
+			height: 126vh;
+			background-color: #0096FF;
+		}
+		.featuredin{
+			padding-top: 10vh;
+			text-align: center;
+			width: 100%;
+			margin-bottom: -3vh;
+			height: 126vh;
+			background: #738bd6;
+		}
+		.course h1{
+			font-size: 3em;
+			font-weight: 900;
+		}
+		.featuredin h1{
+			font-size: 3em;
+			font-weight: 900;
+			color: black;
+		}
+		.para1{
+			color: #fe4;
+			font-weight: bold;
+			font-size: 2rem;
+			line-height: 20px;
+			padding: 30px 30px 80px 30px;
+		}
+		.para2{
+			
+			
+			padding: 30px 30px 100px 30px;
+			
+		line-height: 32px;
+		margin-bottom: -7vh;
+		font-size: 2em;
+		line-height: 1;
+		font-weight: 900;
+			color: #fe4;
+		}
+		.row{
+			display: flex;
+			padding: 5vh 10vw  ;
+		}
+		.row2{
+			display: flex;
+			padding: 5vh 10vw  ;
+		}
+		.product-image {
+			background-color: #fff;
+			width: 21vw;
+			height: 60vh;
+			padding: 10px;
+		}
+		.row-column {
+			background: #fff;
+			border: 4px solid black;
+			border-radius: 10px;
+			height: 63vh;
+			width: 30vw;
+			margin: 0 5vw 10vh 5vw;
+			box-shadow: -1px 0px 30px 0px rgb(0, 0, 0);
+			padding: 10px;
+		}
+		.row-column1{
+			background: #fff;
+		height: 49vh;
+		width: 47vw;
+		margin: 5vh 5vw 10vh 2vw;
+		padding-top: 10vh;
+		}
+		.product-details {
+			background: lightskyblue;
+			color: darkblue;
+			font-weight: 900;
+			box-shadow: -1px 0px 30px 0px rgb(0, 0, 0);
+			border: 4px solid black;
+			border-radius: 10px;
+			height: 63vh;
+			width: 60vw;
+			text-align: left;
+		}
+		.reviewcontent{
+			margin: 1vh 5vw  ;
+			display: flex;
+			justify-content: space-between;
+		}
+		.review1 .review2 .review3{
+			width: 10vw;
+			height: 8vh;
+			text-align: center;
+			border: 3px solid black;
+			padding: 30px;
+		}
+		.review1 {
+		background: #CBC3E3;
+		margin: 40px;
+		padding: 30px 30px;
+		border: 2px solid black;
+		border-radius: 10px;
+		}
+		.review2{
+		background: #FF7F7F;
+		margin: 40px;
+		padding: 20px;
+		border: 2px solid black;
+		border-radius: 10px;
+		}
+		.review3 {
+		background: whitesmoke;
+		margin: 40px;
+		padding: 20px;
+		border: 2px solid black;
+		border-radius: 10px;
+		}
+		.reviewcontent img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			padding: 20px;
+		}
+		.review .heading p{
+			padding-top: 8vh;
+			color: #fff;
+		}
+		.last h3{
+			display: inline-block;
+			margin: 40px ;
+		}
+		.last{
+			padding: 30px ;
+			/* margin-bottom: 30px; */
+			background: #F5F5DC;
+		}
+		footer{
+			height: 50vh;
+			text-align: center;
+			width: 100%;
+			background-color: #f46b36d6;
+			padding: 10vh;
+			font-size: 20px;
+			font-weight: 900;
+		}
+		.review{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(4, 9, 30, 0.7) , rgba(4, 9,30,0.7)) , url('last.png');
+			background-repeat: no-repeat ;
+			background-size: cover;
+		}
+		.review .heading h1{
+			color: #fff;
+			margin-top: 20px;
+		}
+		.review1:hover{
+			box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 3);
+		}
+		.review2:hover{
+			box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 3);
+		}
+		.review3:hover{
+			box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 3);
+		}
+		.review3:hover{
+			box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 3);
+		}
+		.review .heading h1{
+			padding-top: 20px;
+		}
+		.before{
+			font-size: 50px;
+			display: inline-block;
+		}
+		.changetext::after{
+			content: "";
+			font-size: 45px;
+			color: #83EEFF;
+			margin-left: 15px;
+			animation: changetext 15s linear infinite;
+		}
+		@keyframes changetext {
+			0%{content: "EXPERIENCE";}
+			50%{content: "LOVE";}
+			90%{content: "QUALITY";}
+			100%{content: "EXPERIENCE";}
+			
+		}
+		.buy{
+			padding: 12px 24px;
+			background-color: #fff;
+			position: absolute;
+			margin: -4vh 15vw;
+			text-decoration: none;
+			color: black;
+			border-radius: 5px;
+			transition: 0.5s;
+			border: 2px solid black;
+		}
+		.buy:hover{
+			background-color: #f44336
+		}
+		.product-details h3{
+			margin: 2vh;
+			color: purple;
+			font-size: 2rem;
+			font-weight: 900;
+			text-align: center;
+		}
+		.product-details ul{
+			padding: 30px;
+			line-height: 29px;
+		}
+		.counselling-details {
+			height: 70vh;
+			width: 60vw;
+			text-align: left;
+		}
+		.counselling-details h1{
+			text-align: center;
+		}
+		.counselling-details p{
+			font-weight: 900;
+			text-spacing: 2px;
+		}
+		.booking-button{
+			padding: 12px 24px;
+			background-color: lightskyblue;
+			position: absolute;
+			margin: 3vh 12vw;
+			text-decoration: none;
+			color: black;
+			transition: 0.5s;
+			border-radius: 5px;
+		}
+		.booking-button:hover{
+			background: #f44336;
+		}
+		.link-menu1{
+			padding-top: 1vh;
+			font-size: 2em;
+		}.link-menu1{
+			
+			font-size: 1rem;
+		}.link-menu1{
+			font-size: 1rem;
+		}
+		.footer{
+			display: flex;
+			justify-content: space-around;
+			line-height: 2;
+		}
+		.footer ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		.footer ul{
+			list-style: none;
+		}
+		.para3{
+			font-weight: 900;
+			color: #ffffff;
+		}
+		.changeimage{
+			animation: changeimage 20s linear infinite;
+			background: url('product1.jpg');
+			width: 22vw;
+			height: 58vh;
+			padding: 10px;
+			background-size: 22vw 62vh;
+			background-repeat: no-repeat;
+		}
+		@keyframes changeimage {
+			50%{background: url("mask.jpg");
+				background-size: 22vw 61vh;
+		}
+			100%{
+				background: url('mask2.jpg');
+				background-size: 22vw 61vh;
+			}
+		}
+		.heading {
+			text-align: center;
+		}
+		.footer h3{
+			color: #220080;
+		}
+		.footer {
+			color: black;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				
+				<div class="nav-links">
+					<!-- <i class="fa fa-times"></i> -->
+					<ul>
+						<li><a href="#" class="nav-items">HOME</a></li>
+						<li><a href="About.html" class="nav-items">ABOUT</a></li>
+						<li><a href="store.html" class="nav-items">STORE</a></li>
+						<li><a href="contactus.html" class="nav-items">CONTACT US</a></li>
+						<li><a href="counselling.html" class="nav-items">COUNSELLING</a></li>
+					</ul>
+				</div>
+				<!-- <i class="fa fa-bars"></i> -->
+			</nav>
+			<div class="main1">
+				<section class="body1">
+					<h1>Safe-Aid Healthcare</h1>
+					<p class="before">We Just Don't Offer Products, We Offer</p><span class="changetext"></span>
+					<p class="p1">Dedication, Compassion, Innovation.
+					<br>Close to home. Close to your Heart.</p>
+					<a href="About.html" id="learnmore" class="btnone">Learn More</a>
+					<a href="form.html" class="btnone" id="signup">Sign Up</a>
+				</section>
+			</div>
+			
+		</section>
+		<!-------course------->
+		<section class="course">
+			<h1>Exclusive Product</h1>
+			<p class="para1">This product is an exclusive product of our startup.</p>
+			<div class="row">
+				<div class="row-column">
+					<div class="changeimage">
+						
+					</div>
+					
+				</div>
+				<div class="product-details">
+					<h3>Product Details</h3>
+					<ul>
+						<li>Biodegradable straps with seeds embedded in them.</li>
+						<li>Aloevera layer that prevents acne and skincare. </li>
+						<li>Wireless bluetooth speakers are inbuilt.</li>
+						<li>Our mask is Washable.</li>
+						<li>We have won several international awards.</li>
+						<li>Best quality at lowest price.</li>
+					</ul>
+					<a href="#" class="buy">
+						Buy Now
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- -------User reviews------- -->
+		<div class="review">
+			<div class="heading">
+				<h1>User Reviews</h1>
+				<p>What our customer family think about us and about the quality of our products and services.</p>
+			</div>
+			<div class="reviewcontent">
+				<div class="review1"> <h3>
+					Christopher
+					</h3>
+					<img src="user1.png" alt="user1 image">
+					<p>I used this website's service a few days ago and my user experience was just amzing . They offer quality products and if you are thinking of buying one go for it.</p>
+				</div>
+				<div class="review2"> <h3>
+					Columbus
+					</h3>
+					<img src="user2.jpg" alt="user2 image">
+					<p>I was facing several problems with the masks that are being sold in the market ,one of my friends told me about this website and i ordered the mask and it was just amazing.</p>
+				</div>
+				<div class="review3"> <h3>
+					Anshika Singh
+					</h3>
+					<img src="user3.jpg" alt="user2 image">
+					<p>A few months ago during covid-19 ,
+					i checked this website because my parents were suffering from covid-19. They offer quality products at low cost and because of them my parents are alive.</p>
+				</div>
+				
+			</div>
+		</div>
+		<section class="featuredin">
+			<h1>Featured In</h1>
+			<p class="para2">We have been featured in several newspapers and we have also won many awards.</p>
+			<div class="row2">
+				<div class="row-column1">
+					<img src="doctors.jpeg" alt="">
+				</div>
+				<div class="counselling-details">
+					<h1>OUR IDEA-</h1>
+					<p class="para3"><b>The founding idea behind this counselling service is to reclaim your inner harmony. A concept we often lose track of in our busy lives. They aim to enable people to find peace and fulfillment in their lives and change things that prevent them from achieving <br> It’s a process of “guidance and healing” with 24×7 expert help – INDIA TIMES<br><br>
+					Safe-Aid Healthcare is the best online counselling and therapy consultation platform in India. Connect with the best Psychologist, therapist, Counsellors and Mental health experts now via chat, phone or video call.</b></p>
+					<a href="#" class="booking-button">
+						Book Now
+					</a>
+				</div>
+			</div>
+			<footer>
+				<div class="footer">
+					<div class="link-menu-1">
+						<h3>Social Media</h3>
+						<ul><li><a href="#">Facebook</a></li></ul>
+						<ul><li><a href="#">Instagram</a></li></ul>
+						<ul><li><a href="#">Twitter</a></li></ul>
+						<ul><li><a href="#">Youtube</a></li></ul>
+					</div><div class="link-menu-2">
+					<h3>Contact</h3>
+					<ul><li><a href="#">Contact : 8115200050 </a></li></ul>
+					<ul><li><a href="#">Address : Rohilkhand,New Delhi</a></li></ul>
+					<ul><li><a href="#">Email :safe-aidhealthcare<br>@gmail.com</a></li></ul>
+				</div><div class="link-menu-3">
+				<h3>Website</h3>
+				<ul><li><a href="index.html">Home</a></li></ul>
+				<ul><li><a href="About.html">About</a></li></ul>
+				<ul><li><a href="store.html">Store</a></li></ul>
+				<ul><li><a href="contactus.html">Contact Us</a></li></ul>
+				<ul><li><a href="counselling.html">Counselling</a></li></ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

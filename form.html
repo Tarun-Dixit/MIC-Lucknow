@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width:100% ;
+		}
+		.layout{
+			background: #2a4b64;		height: 78vh;
+		width: 50vw;
+		border-radius: 10px;
+		}
+		.layout h1{
+			margin: 20px 0;
+			text-align: center;
+			color: #fff;
+		}
+		.firstnameinput{
+			margin: 7vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.emailinput{
+			margin: 2vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.passwordinput{
+			margin: 2vh 6vw 10vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		.numberinput{
+			margin: 2vh 6vw 3vh;
+			border: 2px solid black;
+			width: 37vw;
+			height: 6vh;
+		}
+		#signup{
+			margin: 20vw ;
+			padding: 12px 24px;
+			background: #00b894;
+			text-decoration: none;
+			color: white;
+			transition: 0.5s
+			border-radius: 5px;
+			border: 3px solid #00b894;
+		}
+		#signup:hover{
+			background: transparent;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<div class="layout">
+				<h1>Sign Up for free </h1>
+				<input class="firstnameinput" type="text" name="name" placeholder="Enter your full name" size="50">
+				<input class="emailinput" type="text" name="name" placeholder="Enter your email address" size="50">
+				<input class="numberinput" type="text" name="name" placeholder="Enter your phone number" size="50">
+				<input class="passwordinput" type="password" name="name" placeholder="Set a password" size="50">
+				<a href="#" id="signup">Sign Up</a>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Store</title>
+	<link rel="stylesheet" href="">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif
+	}
+	.main{
+		height: 100vh;
+		width: 100%;
+	}
+	.heading1{
+		padding: 4vh 0;
+		font-size: 55px;
+		color: #fff;
+		font-weight: 900;
+	}
+	.heading{
+		text-align: center;
+		height:40vh;
+		width:100%;
+		background-image:linear-gradient(rgba(4, 9, 30, 0.7) , rgba(4, 9,30,0.7)) , url('store.jpg') ;
+		background-repeat: no-repeat;
+		background-size: 100vw 40vh;
+
+
+	}
+	.store{
+		display: flex;
+		justify-content: space-around;
+		margin-top: 10vh ;
+
+	}
+	.container{
+		height: 200vh;
+		margin: 0px 13vw;
+	}
+	.store h1{
+		margin-bottom: 10px;
+	}
+	.product1-img img{
+		width: 247px;
+		height: 254px;
+	}
+	.product1{
+		margin: 10vh 5vw;
+		display: flex;
+		padding: 3vh 3vw;
+		height: 50vh;
+   		width: 65vw;
+   		border: 2px solid black;
+		border-radius: 10px;
+		box-shadow: -1px 0px 30px 0px rgb(0, 0, 0);
+
+	}
+	.product1-img{
+		width: 90vw;
+		margin-right: 4vw;
+		margin-left: -2vw;
+	}
+	.mainheading{
+		text-align: center;
+		margin-top: 5vh ;
+	} 
+	.buy{
+		padding: 0px 14px;
+		border: 2px solid black;
+		border-radius: 5px;
+		position: absolute;
+		margin: 4vh 11vw;
+		transition: 0.5s;
+		text-decoration :none;
+		color: black;
+	}
+	.buy:hover{
+		background-color: #f44336
+	}
+	nav{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2% 5%;
+		height: 15vh;
+		
+	}
+	
+	.nav.items{
+		text-decoration: none;
+	}
+	.nav-links ul {
+		list-style: none;
+	}
+	.nav-links ul li{
+		display: inline-block;
+
+	}
+	.nav-links ul li a{
+		text-decoration: none;
+		color: #fff;
+		padding :12px 24px;
+		font-size: 20px;
+	}
+	nav div ul li::after{
+		/* I want to ask that why it is appearing at the bottom instead of appearing at right */
+		content: "";
+		width: 0%;
+		background: #f44336;
+		display: block;
+		height: 3px;
+		transition: width 0.5s; 
+	}
+	.nav-items1{
+		background-color: #f44336
+	}
+	nav div ul li:hover::after{
+		width: 100%;
+	}
+	.product1-details{
+		margin-left: -47vw;
+		line-height: 38px;
+		font-weight: 900;
+	}
+	.product2-details{
+		margin-left: -70vw;
+		line-height: 38px;
+		font-weight: 900;
+	}
+	.product3-details{
+		margin-left: -70vw;
+		line-height: 38px;
+		font-weight: 900;
+	}
+
+	
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="heading">
+			<nav>
+			
+			<div class="nav-links">
+				<!-- <i class="fa fa-times"></i> -->
+
+				<ul>
+					<li><a href="index.html" class="nav-items">HOME</a></li>
+					<li><a href="About.html" class="nav-items">ABOUT</a></li>
+					<li><a href="store.html" class="nav-items1">STORE</a></li>
+					<li><a href="contactus.html" class="nav-items">CONTACT US</a></li>
+					<li><a href="counselling.html" class="nav-items">COUNSELLING</a></li>
+				</ul>
+
+			</div>
+			</nav>
+			<div>
+				<h1 class="heading1">STORE</h1>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="mainheading">Mask</h1>
+			<div class="product1">
+				<div class="product1-img">
+					<img src="product1.jpg" alt="contact us image">
+				</div>
+				<div class="product1-details">
+					<p>
+						<ul>
+							<li>Biodegradable straps with seeds embedded in them.</li>
+							<li>Aloevera layer that prevents acne and skin care.</li>
+					 		<li>Wireless bluetooth speakers are inbuilt and are detachable.</li>
+							<li>Washable.</li>
+							<li>Only Rs. 250</li>
+						</ul>
+					</p>
+					<a href="#" class="buy">
+						Buy Now
+					</a>
+				</div>
+			</div><h1 class="mainheading">Sanitizer</h1>
+			<div class="product1">
+				<div class="product1-img">
+					<img src="product2.jpg" alt="">
+				</div>
+				<div class="product2-details">
+					<p>
+						<ul>
+						    <li>Made from recycled bottles.</li>
+                            <li>Prevents skin infection and acts as an Antiseptic.</li>
+ 							<li>No harsh chemicals are used.</li>
+ 							<li>Made from totally natural ingredients.</li>
+ 							<li>Only Rs. 120</li>
+ 						</ul>		
+					</p>
+					<a href="#" class="buy">
+						Buy Now
+					</a>
+				</div>
+			</div><h1 class="mainheading">Oxygen Cylinder</h1>
+			<div class="product1">
+				<div class="product1-img">
+					<img src="product3.jpg" alt="">
+				</div>
+				<div class="product3-details">
+					<p>
+						<ul>
+							<li>Oxygen cylinders available 24/7.</li>
+							<li>Delivery within 30 minutes.</li>
+							<li>Delivery all over India.</li>
+							<li>Volume of cylinder : 5L </li>
+							<li>Only Rs. 4000 </li>
+						</ul>		
+					</p>
+					<a href="#" class="buy">
+						Buy Now
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
